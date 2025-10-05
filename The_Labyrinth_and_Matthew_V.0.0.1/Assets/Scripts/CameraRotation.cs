@@ -10,7 +10,6 @@ public class CameraRotation : MonoBehaviour
     public float speed;
 
     private float MouseX;
-    private float MouseY;
     public float mouseSpeed;
 
     void Start()
@@ -22,7 +21,6 @@ public class CameraRotation : MonoBehaviour
     void Update()
     {
         MouseX = Input.GetAxis("Mouse X") * mouseSpeed * Time.deltaTime;
-        MouseY = -Input.GetAxis("Mouse Y") * mouseSpeed * Time.deltaTime;
-        transform.rotation *= Quaternion.Euler(MouseY, MouseX, 0);
+        transform.rotation *= Quaternion.Euler(0, MouseX, 0);
     }
 }
