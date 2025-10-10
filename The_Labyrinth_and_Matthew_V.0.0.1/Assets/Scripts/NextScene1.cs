@@ -10,6 +10,6 @@ public class NextScene1 : MonoBehaviour
     }
     public void OpenGame()
     {
-        Application.LoadLevel(2);
+        Application.LoadLevel(1);
     }
 }

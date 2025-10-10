@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class NextScene : MonoBehaviour
+public class NextScene2 : MonoBehaviour
 {
     void Start()
     {
@@ -10,6 +10,6 @@ public class NextScene : MonoBehaviour
     }
     public void OpenGame()
     {
-        Application.LoadLevel(2);
+        Application.LoadLevel(3);
     }
 }
